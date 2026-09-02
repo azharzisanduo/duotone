@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataWise - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <!-- nav left components -->
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <h2>DataWise</h2>
+                    <img src="img/logo.png" alt="DataWise Logo">
+                </div>
+    
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="#">Features</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                        <li><a href="#">Case Studies</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav right components -->
+            <div class="nav-right">
+                <button class="demo" onclick="location.href='signup.html'">Get a demo</button>
+                <button class="trial" onclick="location.href='signup.html'">Start your free trial</button>
+                <div class="drop-menu">
+                    <ion-icon name="menu-outline" onclick="menuOpen()"></ion-icon>
+                    <ion-icon name="add-outline" onclick="menuClose()"></ion-icon>
+                </div>
+            </div>
+            <!-- for nav responsive dropdown (768-576px) -->
+            <div class="res-drop rd1">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <!-- for nav responsive dropdown (<576px) -->
+            <div class="res-drop rd2">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <button class="demo" onclick="location.href='signup.html'">Get a demo</button>
+                    <button class="trial" onclick="location.href='signup.html'">Start your free trial</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start  -->
+    <main>
+        <section id="pay">
+            <div class="pay-cont">
+                <div class="pay-mn-box">
+                    <div class="pay-txt">
+                        <h4>Checkout</h4>
+                        <a href="index.html"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="pay-con-prnt">
+                        <div class="pay-mob-bnk">
+                            <h6>Mobile Payments</h6>
+                            <div class="pay-mob-icons">
+                                <i class="fa-brands fa-paypal"></i>
+                                <i class="fa-brands fa-apple"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-stripe-s"></i>
+                                <i class="fa-brands fa-cash-app"></i>
+                            </div>
+
+                            <div class="pay-mob-num">
+                                <input type="tel" id="mob-mun" placeholder="Enter Mobile Number" required>
+                                <input type="text" id="bank-num" placeholder="Enter ID" required>
+                                <input type="password" id="bank-pass" placeholder="Enter Password" required>
+                            </div>
+
+                            <div class="save-card">
+                                <input type="checkbox" id="save-card">
+                                <label for="save-card">Save this info for future payments</label>
+                            </div>
+
+                            <button class="save-1" onclick="location.href='thank.html'">Place Order</button>
+                        </div>
+
+                        <div class="pay-card">
+                            <h6>Card Payments</h6>
+                            <div class="pay-card-icons">
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                                <i class="fa-brands fa-cc-amex"></i>
+                            </div>
+
+                            <div class="pay-card-num">
+                                <input type="number" id="card-num" placeholder="Enter Card Number" required>
+                                <input type="text" id="card-name" placeholder="Name on Card" required>
+                                <input type="text" id="exp-date" placeholder="MM/YY" required>
+                                <input type="number" id="cvv" placeholder="Enter CVV" required>
+                            </div>
+
+                            <div class="save-card">
+                                <input type="checkbox" id="save-card">
+                                <label for="save-card">Save this card for future payments</label>
+                            </div>
+
+                            <button onclick="location.href='thank.html'">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main end  -->
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

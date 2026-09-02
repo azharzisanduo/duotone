@@ -1,0 +1,477 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+/* nav start */
+.nav-cont {
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 20px;
+}
+
+.nav-logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.nav-logo h2 {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+.nav-logo h2 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.login {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+.login a {
+    text-decoration: none;
+    color: #000;
+}
+
+.login:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 0 #fff;
+}
+
+.signup {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border: 2px solid #E5E5E5;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.signup:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 5px 5px 0 0 #fff;
+}
+
+.cart {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart:hover {
+    background-color: #fff;
+    color: #565555;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 0 #565555;
+}
+
+.menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-size: 26px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+@media screen and (min-width:530px) and (max-width:868px) {
+    .nav-logo img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav-logo h2 {
+        font-size: 25px;
+    }
+
+    .login {
+        font-size: 13px;
+        padding: 5px 10px;
+        display: none;
+    }
+
+    .signup {
+        font-size: 13px;
+        padding: 4px 10px;
+        display: none;
+    }
+
+    .cart {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:550px) {
+    .nav-logo img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .nav-logo h2 {
+        font-size: 20px;
+    }
+
+    .login {
+        font-size: 13px;
+        padding: 5px 10px;
+        display: none;
+    }
+
+    .signup {
+        font-size: 13px;
+        padding: 4px 10px;
+        display: none;
+    }
+
+    .cart {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        transition: all 0.3s ease;
+    }
+}
+
+/* nav end */
+/* main start  */
+.pay-cont {
+    width: 100%;
+    background-color: #e8e8e8;
+    padding: 140px 0 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-mn-box {
+    width: 70%;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    border-radius: 30px;
+    padding: 15px 20px 20px 20px;
+}
+
+.pay-txt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.pay-txt h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pay-txt i {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 7.5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.pay-txt a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.pay-txt a:hover {
+    color: #fff;
+}
+
+.pay-txt i:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.pay-con-prnt {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.pay-mob-bnk {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.pay-mob-bnk h6 {
+    font-size: 18px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.pay-mob-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.pay-mob-icons i {
+    font-size: 30px;
+    color: #969696;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.pay-mob-icons i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+.pay-mob-num {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 10px 0 0 0;
+}
+
+.pay-mob-num input {
+    width: 100%;
+    margin: 5px 0;
+    border: 2px solid #000;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pay-mob-num input:focus {
+    border-color: var(--primary-color);
+}
+
+.pay-mob-num input::placeholder {
+    color: #7d7d7d;
+    font-size: 14px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+.pay-mob-num input:hover::placeholder {
+    font-size: 16px;
+}
+
+.pay-mn-box button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 20px 0 0 0;
+}
+
+.pay-mn-box button:hover {
+    background-color: #565656;
+    cursor: pointer;
+}
+
+.save-1 {
+    transform: translateY(55px);
+}
+
+@media screen and (min-width:0px) and (max-width:930px) {
+    .save-1 {
+        transform: translateY(0px);
+    }
+
+    .pay-mn-box {
+        width: 350px;
+    }
+
+    .pay-con-prnt {
+        flex-direction: column;
+    }
+
+    .pay-mob-icons i {
+        font-size: 22px;
+    }
+
+}
+
+.pay-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.pay-card h6 {
+    font-size: 18px;
+    font-weight: 550;
+    text-align: center;
+}
+
+.pay-card-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.pay-card-icons i {
+    font-size: 30px;
+    color: #969696;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.pay-card-icons i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+
+.pay-card-num {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 10px 0 0 0;
+}
+
+.pay-card-num input {
+    width: 100%;
+    margin: 5px 0;
+    border: 2px solid #000;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pay-card-num input:focus {
+    border-color: var(--primary-color);
+}
+
+.pay-card-num input::placeholder {
+    color: #7d7d7d;
+    font-size: 14px;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+.pay-card-num input:hover::placeholder {
+    font-size: 16px;
+}
+
+.save-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-card input {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.save-card input[type="checkbox"] {
+    accent-color: var(--primary-color);
+}
+
+/* main end  */
